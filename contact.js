@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             if (data === "Mensaje enviado correctamente") {
                 alert(data);
-                
+                document.getElementById('name').value = ' ';
+                document.getElementById('email').value = ' ';
+                document.getElementById('phone').value = ' ';
+                document.getElementById('message').value = ' ';
             } else {
                 alert('Error al enviar el mensaje.');
             }
